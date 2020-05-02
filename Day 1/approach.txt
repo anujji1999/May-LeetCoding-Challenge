@@ -1,0 +1,4 @@
+Used Binary Search Approach
+
+Time Complexity : O(log(N))
+Space Complexity : O(1);
