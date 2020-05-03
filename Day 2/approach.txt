@@ -1,0 +1,4 @@
+Storing all characters of J (i.e all stones) in a hash Set. in order to reduce searching time.
+
+Time Complexity : O(len(J) + len(S))
+Space Complexity : O(len(J))
