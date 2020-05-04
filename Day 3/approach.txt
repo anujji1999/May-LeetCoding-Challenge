@@ -1,0 +1,6 @@
+Store all characters of magazine in an hashmap along with it's frequency.
+Then, run a loop over ransomNote string and if character is pesent in hashmap, reduce it's frequency by 1 else return false.
+If frequency of any character becomes 0, remove it from hashmap.
+
+Time Complexity : O(len(ransomNote) + len(magazine))
+Space Complexity : O(len(magazine))
