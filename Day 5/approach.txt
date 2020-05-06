@@ -1,0 +1,5 @@
+Storing frequencies of all characters in a hashmap, then traversing on string and return index of first character which has frequency 1
+
+Time Complexity : O(n) 
+Space Complexity : O(n)
+where n = length of string
