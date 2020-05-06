@@ -1,0 +1,4 @@
+Traversing on every bit of numberr and togging the bit in our answer variable
+
+Time Complexity : O(logn) or we can also consider it as constant because a numbe can have only 32 bits, so loop will not exceed 32 iterations
+Space Complexity : O(1)
