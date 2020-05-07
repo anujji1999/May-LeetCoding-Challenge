@@ -1,0 +1,4 @@
+Storing frequencies of all elements in a hashmap and then traversing over the array and finding element having frequency greater than half the length of array
+
+Time Complexity : O(N)
+Space Compelxity : O(N)
