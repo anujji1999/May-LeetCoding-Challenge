@@ -1,0 +1,18 @@
+Here, we need two details to ensure that x and y are cousins or not:
+    1) Height/ Depth of x and y
+    2) Parent of x and y
+
+So, there are many options : either return a pair OR use pass reference for Parent and return height/Depth from recursive function
+
+So, i made variables parent1 and parent2 in main function and passed them by reference, so ultimately all changes in them will be reflected in main
+
+Steps :-
+    1) First, i checked if root->val == x OR root->val == y, then return false
+    2) Then we called recursive function on the rroot to find the vaiable x and return it's height(Parent will be automatically updated as it is passed by reference)
+    3) Step 2 is repeated for variable y
+    4) If height1 == height2 && parent1 != parent2, return true
+    5) return false
+
+Since, in Java there is no option of pass by reference, So we many options : https://www.geeksforgeeks.org/how-to-pass-integer-by-reference-in-java/
+
+For Java, i created an array of size 1 and passed it in function, since arrays are passed via reference
