@@ -1,0 +1,7 @@
+Used brute force type approach
+Calculated slope by using 1st 2 coordinates and stored it.
+And then started loop and calculated further slopes, if they comes out different, return false
+After loop return true
+
+Time Complexity : O(N)
+Space Complexity : O(1)
