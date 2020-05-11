@@ -1,0 +1,19 @@
+Thsi question is similar to Celebrity Problem.
+But, here we are not given trust matrix, instead we are given trust relation, so, using stack and elimination approach can we memory specific operation
+But, still process is :
+    1)Form a N^2 matrix consisting all trust relations
+    2)push all numbers from 1 to N into stack
+    3)Repeat till stack size is greater than 1
+        a)Pop 2 elements, a and b from stack
+        b)If matrix[a][b] == 1, i.e a trusts b. So, we can say that a can't be judge. So we push b back to stack and continue
+        c)else, push a back to stack and continue because matrixa[b] must be 0, which signifies that b don't know a, so a can't be judge
+    4)Pop last element from stack and store it in variable and run a O(N) loop to confirm whether ans is correct or not. This is done by checking row and column corresponding to ans.
+    Here, Time Complexity : O(N)
+          Space Complexity : O(N^2)
+
+
+Here, better approach can be to consider it as simple graph problem and calculate indegree and outdegree for every element.
+The element whose indegree == N-1 and outdegree == 0 is judge
+
+Time Complexity : O(N)
+Space Complexity : O(N)
