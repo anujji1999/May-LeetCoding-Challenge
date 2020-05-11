@@ -1,0 +1,7 @@
+This can be solved via many approaches like, Binary Search or using fact that square numbers are alwas sum of odd numbers starting form.
+so, i can start from 1 and start subtracting odd numbers from the given number.
+If at any moment my number becomes 0, then it is perfect square and i can return tu.
+Else, return false
+
+Time Complexity : O(N)
+Space Complexity : O(1)
