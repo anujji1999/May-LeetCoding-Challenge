@@ -1,0 +1,4 @@
+Simple flood dill algo, used directions array to reduce no of lines of code
+
+Main thing is that before calling helper function we should check that newColor != oldColor, because if we don't put this check, then our function will get into infinite loop
+If we don't want to put this check, we need to keep a visited array
