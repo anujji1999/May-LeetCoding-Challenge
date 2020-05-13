@@ -1,0 +1,2 @@
+Solved using XOR operator.
+Another better approach can be to use Binary Search
