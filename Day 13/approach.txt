@@ -1,0 +1,6 @@
+Use stack approach
+1)Iterate over all charactes of given string
+    1)While, stack.top() > currentCharacter , Pop from stack
+    2)If stack is not empty OR currentCharacter != "0", then we push it into our stack and decrement k
+2)While stack is not empty & k != 0, pop from stack and decrement k
+3)Fetch all characters from stack and reverse them and return the ans
