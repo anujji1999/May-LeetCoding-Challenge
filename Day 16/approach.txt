@@ -1,0 +1,6 @@
+Here we can make 4 pointer variables : oddHead, evenHead, oddCurr, evenCurr
+oddHead and evenHead are dummy nodes pointing to the start of odd and even linked lists.
+We iterate over the given linked List and join the nodes of Linked list at the end of oddCurr or evenCurr depending on the whether it is at odd positio or even position
+At last, evenCurr->next = NULL
+and oddCurr->next = evenHead.next
+return oddHead.next
