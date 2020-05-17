@@ -1,0 +1,21 @@
+For non circular maximum sum subarrray, we use Kadane's algorithm.
+but since it is circular arrray, Kadane's can't be used directly.
+
+In circular array, there are 2 cases for maximum sum subarray :-
+    1) The maximum sum subarray exists in between the array, like that existed in non circular array
+    2) The maximum sum subarray  has 2 parts : one at the end and one at the beginning
+Case 1 can be handled simply by Kadane's Algo. And for Case 2, we can make a array of twice the size and copy the given array twice, and then apply Kadane's algorithm to find maximum sum subarray of size less than or equal to the size of given array.
+
+
+Another, better approach can be to find, min sum subarray in the complete array.
+Then, find maximum sum subarray by : (Sum of all elements of array - Min sum subarray)
+Here, min sum subarray can be found by inverting the whole array and then applying Kadane's algorithm.
+But, there will be one corner case , i.e if all elements are negative
+
+
+Another way to implement above approach is to find max_straight_sum and min_straight_sum in the array assuming no wrap around condition, and also find total_sum of array.
+If(min_straight_sum == total_sum){  //When all elements are -ve
+    return max_straight_sum  //Because it must be pointing to largest negative no on the no line
+}else{
+    return max(max_straight_sum, (array_sum - min_straight_sum))
+}
